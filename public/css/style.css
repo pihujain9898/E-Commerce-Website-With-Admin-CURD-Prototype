@@ -1,0 +1,344 @@
+body {
+    color: #fff;
+    font: 62.5 'Open Sans', sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+*, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.form-wrapper {
+    width: 300px;
+    height: 412px;
+    margin: 150px auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6), inset 0px 1px 0px rgba(255, 255, 255, 0.04);
+}
+.signup-form-wrapper {
+    height: 506px;
+    margin: 85px auto;
+}
+
+.form-item {
+    color: whitesmoke;
+    width: 100%;
+}
+
+
+h3 {
+    font-size: 25px;
+    font-weight: 640;
+    margin-bottom: 10px;
+    color: #e7e7e7;
+    padding: 6px;
+    font-family: 'sans-serif', 'helvetica';
+}
+
+
+
+.form-item input {
+    border: none;
+    background: transparent;
+    color: #fff;
+    margin-top: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    height: 49px;
+    padding: 0 16px;
+    width: 100%;
+    padding-left: 55px;
+
+}
+
+input[name='password'] {
+    background: transparent url("../img/pass.png") no-repeat;
+    background-position: 10px 50%;
+}
+input[name='password_confirmation'] {
+    background: transparent url("../img/repass.png") no-repeat;
+    background-position: 10px 50%;
+}
+
+input[type='text'] {
+    background: transparent url("../img/user.png") no-repeat;
+    background-position: 10px 50%;
+
+}
+input[type='email'] {
+    background: transparent url("../img/mail.png") no-repeat;
+    background-position: 10px 50%;
+
+}
+
+.form-item input:focus {
+    outline: none;
+    border: 1.4px solid #cfecf0;
+}
+
+.button-panel {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.button-panel .button {
+    background: #00b6df;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    font-family: 'helvetica', 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.6s linear;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background: #6eb7cb;
+}
+
+.form-item input,
+.button-panel .button {
+    border-radius: 2px
+}
+
+.reminder {
+    text-align: center;
+}
+
+.reminder a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+    
+}
+
+.reminder a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+::placeholder {
+    color: whitesmoke;
+    opacity: 1;
+}
+.login-icon{
+    width: 1.8em;
+    margin: 0 0.4em 1em;
+}
+
+form span{
+  font-size: 0.8rem;
+}
+
+
+
+.margin-setter{
+    width: 80vw;
+    transform: translate(12.5%);
+  }
+  /* -------------Navigation Bar-------------- */
+  nav{
+    
+    background: rgba(0, 0, 0, 0.7);
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    z-index: 1;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    transition:.5s;
+  }
+  .nav-checkbox{
+    display: none;
+    z-index: 2;
+    position: absolute;
+    transform: scale(2.6);
+    top: 1.9rem;
+    right: 1.6rem;
+    opacity: 0;
+  }
+  nav.active{
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  }
+  .nav-div{
+    display: flex;
+  }
+  .nav-li-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .nav-div ul li{
+    display: inline-block;
+    margin-left: 2rem;
+  }
+  .nav-div ul li a{
+    text-decoration: none;
+    color: azure;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .nav-div ul li:hover{
+      color:lightyellow;
+      background: rgba(128, 128, 128, 0.2);
+      padding: 1rem 1.6rem;
+      border-top: .4rem solid #07bec2;
+  }
+  #nav-icon{
+    display: none;
+    color: snow;
+    margin-top: .15rem;
+  }
+  .nav-div input[type='checkbox']:checked~ .nav-li-box{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 4rem;
+    background: rgba(0, 0, 0, 0.9);
+    width: 86vw;
+    height: 50vmax;
+    justify-content: space-evenly;
+    padding: .5em;
+    animation: nav-animation forwards 0.5s ease-in-out 1;
+  }
+  .nav-img{
+    transform: scale(1.5);
+  }
+  @keyframes nav-animation{
+      from{
+          transform: translateY(-100%);
+          opacity: 0;
+      }
+      to{
+          transform: translateY(0rem);
+          opacity: 1;
+      }
+  }
+  
+  
+  
+  @media all and (max-width:900px) {
+    /* Genral */
+    .margin-setter {
+      width: 86vw;
+      transform: translate(7%);
+    }
+    /* Navigation Bar */
+    nav{
+      padding: 1rem;
+    }
+    #nav-icon{
+      display: block;
+    }
+    .nav-div ul{
+      display: none;
+    }
+    .nav-checkbox{
+      display: block;
+    }
+    .nav-div ul li a{
+      font-size: 1.4rem;
+    }
+    .nav-div ul li{
+      margin-left: 0;
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+    .nav-div ul li:hover{
+      padding: 1.6rem;
+      border-top: none;
+    }
+  }
+
+
+  /* Shoping Page */
+  /* Shoping Page */
+  /* Shoping Page */
+  /* Shoping Page */
+
+  .products-container{
+    margin-top: 4rem;
+    width: 80%;
+    color: #000000;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .products-container .card{
+    height: 100%;
+  }
+  .products-container .row{
+    justify-content: space-evenly;  
+  }
+  .card-container{
+    margin: 0 auto 4rem;
+  }
+  
+  .card-btn{
+    margin-top: 1rem;
+  }
+  .products-container img{
+    height: 180px; 
+    width: 100%; 
+    display: block; 
+    object-fit: contain; 
+    border-bottom: 1px solid rgba(92, 92, 92, 0.1);
+  }
+
+
+
+
+  .home-header-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -1; }
+  
+    @media (min-aspect-ratio: 16 / 9) {
+      .home-header-bg {
+        width: 100vw;
+        height: auto;} 
+      }
+    @media (max-aspect-ratio: 9 / 16) {
+      .home-header-bg {
+        width: auto;
+        height: 100vh; } 
+      }
+
+      @media screen and (min-width: 800px) {
+        .home-header-bg {
+          width: auto;
+          height: 200vh;
+        }
+      }
+      @media screen and (min-width: 1600px) {
+        .home-header-bg {
+          width: auto;
+          height: 120vh;          
+        }
+      }
+
+
+.image-parent {
+  max-width: 8rem;
+}
