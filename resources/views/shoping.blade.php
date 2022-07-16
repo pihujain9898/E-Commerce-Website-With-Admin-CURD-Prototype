@@ -2,7 +2,7 @@
 
 @section('main-section')
 
-<div class="products-container container">
+<div class="products-container container" style="z-index: -1">
     <div class="row">
         @foreach ($products as $product)
         <div class="card-container col-xl-3 col-lg-4 col-md-5 col-sm-6 ">

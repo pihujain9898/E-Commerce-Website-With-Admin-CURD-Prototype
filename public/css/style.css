@@ -242,6 +242,7 @@ form span{
     /* Navigation Bar */
     nav{
       padding: 1rem;
+      z-index: 5;
     }
     #nav-icon{
       display: block;

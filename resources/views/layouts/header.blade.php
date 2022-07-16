@@ -27,7 +27,10 @@
               <li><a href="/cart">Cart</a></li>
               @if (Session()->has('u_id') OR Session()->has('id'))
               <li><a href="/logout">Log Out</a></li>
-              @else
+                @if(Session()->get('u_type')==1)
+                <li><a href="/admin">Admin</a></li>
+                @endif
+              @else              
               <li><a href="/login">Log In</a></li>
               <li><a href="/signup">Register</a></li>
               @endif

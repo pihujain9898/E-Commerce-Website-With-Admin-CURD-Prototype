@@ -55,9 +55,9 @@
             <div class="reminder">
             <!-- <p>Not a member? <a href="#">Sign up now</a></p> -->
             <center>
-                <a href="#"><img class="login-icon" src="{{ asset('img/facebook.png') }}" alt="Google Icon"></a>
-                <a href="#"><img class="login-icon" src="{{ asset('img/search.png') }}" alt="Google Icon"></a>
-                <a href="#"><img class="login-icon" src="{{ asset('img/instagram.png') }}" alt="Google Icon"></a>
+                <a href="{{ url('auth/facebook') }}"><img class="login-icon" src="{{ asset('img/facebook.png') }}" alt="Google Icon"></a>
+                <a href="{{ url('auth/google') }}"><img class="login-icon" src="{{ asset('img/search.png') }}" alt="Google Icon"></a>
+                <a href="{{ url('auth/github') }}"><img class="login-icon" src="{{ asset('img/github.png') }}" alt="Google Icon"></a>
             </center>
             <a href="/login" id="siginup-page">Already a member? Log in</a>
 

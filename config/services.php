@@ -14,9 +14,21 @@ return [
     |
     */
     'google' => [
-        'client_id'     => env('GOOGLE_CLIENT_ID'),
-        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
-        'redirect'      => env('GOOGLE_REDIRECT')
+        'client_id' => '487307723481-vgl2mp6kp77qsdnaq13tkv1gnhe4922j.apps.googleusercontent.com',
+        'client_secret' => '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',
+        'redirect' => 'http://127.0.0.1:8000/callback/google'
+    ],
+
+    'github' => [
+        'client_id' => 'e7850cdb73444df1cbb4',
+        'client_secret' => 'd8a8ffc846628b787f76a395e4c0c11bc1dc72a2',
+        'redirect' => 'http://127.0.0.1:8000/callback/github',
+    ],
+
+    'facebook' => [
+        'client_id' => '359760292903702',
+        'client_secret' => '62704f1ff4e86dd2bf6b6eb0f2e41779',
+        'redirect' => 'http://127.0.0.1:8000/callback/facebook',
     ],
     
     'mailgun' => [

@@ -20,6 +20,8 @@ class Users extends Authenticatable
         'name',
         'email',
         'password',
+        'social_id',
+        'social_type',
     ];
 
     /**
@@ -40,4 +42,6 @@ class Users extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public $primaryKey="u_id";
 }
